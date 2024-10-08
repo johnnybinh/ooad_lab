@@ -1,0 +1,35 @@
+
+@startuml
+
+class Student{
+name: string;
+phoneNumber: string;
+email: string;
+}
+
+
+class UndergraduateStudent{
+  attribute:type
+}
+
+class GraduateStudent{
+  attribute:type
+}
+
+
+class StudentFactory{
+  createStudent():void;
+}
+
+class Enrollment{
+attribute:type;
+}
+
+
+StudentFactory-down->Student:create;
+UndergraduateStudent-up->Student
+GraduateStudent-up->Student
+
+
+
+@enduml
