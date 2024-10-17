@@ -1,5 +1,6 @@
 
 @startuml
+!theme plain
 
 class Student{
 name: string;
@@ -17,12 +18,12 @@ class GraduateStudent{
 }
 
 
-class StudentFactory{
+interface StudentFactory{
   createStudent():void;
 }
 
 class Enrollment{
-attribute:type;
+  attribute:type;
 }
 
 

@@ -1,0 +1,24 @@
+@startuml
+!theme plain
+left to right direction
+
+
+:Customer:
+:Staff:
+
+
+package Restaurant {
+  usecase "Make Reservation" as MR 
+  usecase "Check Reservation" as RC
+  usecase "Confirm Reservation" as CR
+  usecase "Update Availability" as UA
+
+ 
+}
+
+:Customer: --> MR
+:Staff: -up-> UA
+:Staff: -up-> CR
+:Customer: -right-> RC
+:Staff: -up-> RC
+@enduml
