@@ -1,11 +1,9 @@
-@startuml
+@startuml 
 !theme plain
 left to right direction
 
-
 :Customer:
 :Staff:
-
 
 package Restaurant {
   usecase "Make Reservation" as MR 
@@ -13,7 +11,6 @@ package Restaurant {
   usecase "Confirm Reservation" as CR
   usecase "Update Availability" as UA
 
- 
 }
 
 :Customer: --> MR

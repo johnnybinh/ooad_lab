@@ -1,0 +1,20 @@
+@startuml
+
+title Make Reservation Acitivity
+
+|Customer|
+:Create Reservation Request;
+|Staff|
+:Check availability;
+if(Table available?) is (yes) then
+    :Send confirmation;
+    |Customer|
+    :Confirm Reservation;
+    |Staff|
+    :Update availability;
+    stop
+else(no)
+    :Send Reservation Denial Email;
+    stop
+
+@enduml
